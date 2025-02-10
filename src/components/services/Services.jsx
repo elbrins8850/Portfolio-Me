@@ -7,10 +7,9 @@ const Services = () => {
     return (
         <section id='sevices'>
             <motion.div className="top_section"
-             initial={{y:-150, opacity:0}}
-             animate={{y:0, opacity:1}}
-             whileInView={{y:0, opacity:1}}
-             transition={{duration:1}}
+             initial={{ y: -55, opacity: 0 }}
+             whileInView={{ y: 0, opacity: 1 }}
+             transition={{ duration: 1 }}
             >
                 <h4 className='text-light'>
                     What I offer

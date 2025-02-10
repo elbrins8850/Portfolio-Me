@@ -27,12 +27,12 @@ const Home = () => {
                 >Frontend Developer</motion.h4>
                 <div className="btns">
                     <motion.a href={cv} className="btn" download
-                     initial={{x:-250, opacity:0}}
+                     initial={{x:-150, opacity:0}}
                      whileInView={{x:0, opacity:1}}
                      transition={{duration:1}}
                     >Download Cv</motion.a>
                     <motion.a href="#contact" className="btn btn-primary"
-                     initial={{x:250, opacity:0}}
+                     initial={{x:150, opacity:0}}
                      whileInView={{x:0, opacity:1}}
                      transition={{duration:1}}
                     >Let&apos;s Talk</motion.a>
