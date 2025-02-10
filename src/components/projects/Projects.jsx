@@ -52,9 +52,10 @@ const Projects = () => {
     return (
         <section id='project'>
             <motion.div className="top_section"
-              initial={{y:-150, opacity:0}}
-              whileInView={{y:0, opacity:1}}
-              transition={{duration:1}}
+            initial={{y:-150, opacity:0}}
+            animate={{y:0, opacity:1}}
+            whileInView={{y:0, opacity:1}}
+            transition={{duration:1}}
             >
                 <h4 className='text-light'>
                     My Recent Work
@@ -66,7 +67,11 @@ const Projects = () => {
             <div className="container p-container">
                 {data.map((item) => {
                     return(
-                        <article className='card' key={item.id}>
+                        <motion.article className='card' key={item.id}
+                        initial={{x:150, opacity:0}}
+                        whileInView={{x:0, opacity:1}}
+                        transition={{duration:1}}
+                        >
                         <div className="img">
                             <img src={item.image} />
                         </div>
@@ -74,7 +79,7 @@ const Projects = () => {
                             <a href={item.github} target='_blank' title='Git Repo'><FaGithub /></a>
                             <a href={item.live} target='_blank' title='Live Demo'><SiLivewire /></a>
                         </div>
-                    </article>
+                    </motion.article>
                     )
                 })}
             </div>

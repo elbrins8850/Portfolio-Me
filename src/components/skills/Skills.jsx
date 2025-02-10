@@ -79,7 +79,12 @@ const Skills = () => {
             >
                 {allSkiils.map((item) => {
                     return (
-                        <article className='card' key={item.id}>
+                        <motion.article className='card' key={item.id}
+                        
+                        initial={{x:-150, opacity:0}}
+                        whileInView={{x:0, opacity:1}}
+                        transition={{duration:1}}
+                        >
                             <div className="icon">
                                 <img src={item.icon} />
                             </div>
@@ -87,7 +92,7 @@ const Skills = () => {
                                 <h3>{item.title}</h3>
                                 <h5 className='text-light'>{item.text}</h5>
                             </div>
-                        </article>
+                        </motion.article>
                     )
                 })}
             </div>

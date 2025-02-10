@@ -11,10 +11,10 @@ const Nav = () => {
     const [active,Setactive]=useState("#");
     return (
         <motion.nav
-        // initial={{x:-1000, opacity:0}}
-        // animate={{x:-150, opacity:1}}
-        // whileInView={{x:-150, opacity:1}}
-        // transition={{duration:2}}
+        initial={{x:-1000, opacity:0}}
+        animate={{x:-150, opacity:1}}
+        whileInView={{x:-150, opacity:1}}
+        transition={{duration:1}}
         >
             <a href="#" className={active === "#"? "active":" "} onClick={()=>Setactive("#")}><IoHomeOutline/></a>
             <a href="#about" className={active === "#about"? "active":" "} onClick={()=>Setactive("#about")}><LuUserRound/></a>

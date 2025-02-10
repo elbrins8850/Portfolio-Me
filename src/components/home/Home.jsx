@@ -38,9 +38,13 @@ const Home = () => {
                     >Let&apos;s Talk</motion.a>
                 </div>
 
-                <div className="me">
+                <motion.div className="me"
+                 initial={{x:150, opacity:0}}
+                 whileInView={{x:0, opacity:1}}
+                 transition={{duration:1.5}}
+                >
                     <img src={me} className="image" alt="image" />
-                </div>
+                </motion.div>
             </div>
             <motion.a href="#about" className="scroll_down"
                 initial={{x:250, opacity:0}}

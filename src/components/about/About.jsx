@@ -21,10 +21,18 @@ const About = () => {
                     </h2>
                 </motion.div>
                 <div className="content">
-                    <div className="left">
+                    <motion.div className="left"
+                     initial={{x:-150, opacity:0}}
+                     whileInView={{x:0, opacity:1}}
+                     transition={{duration:1}}
+                    >
                         <img src={image} alt="image" />
-                    </div>
-                    <div className="right">
+                    </motion.div>
+                    <motion.div className="right"
+                    
+                    initial={{x:150, opacity:0}}
+                    whileInView={{x:0, opacity:1}}
+                    transition={{duration:1}}>
                         <div className="cards">
                             <div className="card">
                                 <FaAward className='card-icon' />
@@ -50,7 +58,7 @@ const About = () => {
                             experience and collaborating with design teams to deliver accurate and responsive
                             solutions.</p>
                         <a href="#contact" className="btn btn-primary">Let&apos;s Talk</a>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

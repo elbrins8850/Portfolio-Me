@@ -23,7 +23,7 @@ const Services = () => {
                 <motion.div className="cards"
                   initial={{x:150, opacity:0}}
                   whileInView={{x:0, opacity:1}}
-                  transition={{duration:1.5}}
+                  transition={{duration:1}}
                 >
                     <div className="card">
                         <MdDesignServices className='card-icon' />
