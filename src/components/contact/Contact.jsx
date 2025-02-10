@@ -71,9 +71,9 @@ const Contact = () => {
                     {data.map((item) => {
                         return (
                             <motion.div className="cards" key={item.id}
-                            initial={{x:-500, opacity:0}}
+                            initial={{x:150, opacity:0}}
                             whileInView={{x:0, opacity:1}}
-                            transition={{duration:1}}
+                            transition={{duration:1.5}}
                             >
                                 <div className="card">
                                     <h3> {item.icon}</h3>

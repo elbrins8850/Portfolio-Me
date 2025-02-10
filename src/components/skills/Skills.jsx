@@ -74,10 +74,8 @@ const Skills = () => {
                     My Expreience
                 </h2>
             </motion.div>
-            <motion.div className="container s-container"
-              initial={{x:-500, opacity:0}}
-              whileInView={{x:0, opacity:1}}
-              transition={{duration:1}}
+            <div className="container s-container"
+             
             >
                 {allSkiils.map((item) => {
                     return (
@@ -92,7 +90,7 @@ const Skills = () => {
                         </article>
                     )
                 })}
-            </motion.div>
+            </div>
         </section>
     )
 }

@@ -9,9 +9,9 @@ const About = () => {
         <section id='about'>
             <div className="container">
                 <motion.div className="top_section"
-                 initial={{y:-150, opacity:0}}
-                 whileInView={{y:0, opacity:1}}
-                 transition={{duration:1}}
+                    initial={{ y: -55, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1 }}
                 >
                     <h4 className='text-light'>
                         Get To Know
@@ -21,19 +21,10 @@ const About = () => {
                     </h2>
                 </motion.div>
                 <div className="content">
-                    <motion.div className="left"
-                  initial={{x:-500, opacity:0}}
-                  whileInView={{x:0, opacity:1}}
-                  transition={{duration:1}}
-                    >
+                    <div className="left">
                         <img src={image} alt="image" />
-                    </motion.div>
-                    <motion.div className="right"
-                     initial={{x:150, opacity:0}}
-                     whileInView={{x:0, opacity:1}}
-                     transition={{duration:1.5}}
-                    
-                    >
+                    </div>
+                    <div className="right">
                         <div className="cards">
                             <div className="card">
                                 <FaAward className='card-icon' />
@@ -59,7 +50,7 @@ const About = () => {
                             experience and collaborating with design teams to deliver accurate and responsive
                             solutions.</p>
                         <a href="#contact" className="btn btn-primary">Let&apos;s Talk</a>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

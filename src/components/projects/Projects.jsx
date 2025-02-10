@@ -66,11 +66,7 @@ const Projects = () => {
             <div className="container p-container">
                 {data.map((item) => {
                     return(
-                        <motion.article className='card' key={item.id}
-                        
-                        initial={{x:-500, opacity:0}}
-                        whileInView={{x:0, opacity:1}}
-                        transition={{duration:1.5}}>
+                        <article className='card' key={item.id}>
                         <div className="img">
                             <img src={item.image} />
                         </div>
@@ -78,7 +74,7 @@ const Projects = () => {
                             <a href={item.github} target='_blank' title='Git Repo'><FaGithub /></a>
                             <a href={item.live} target='_blank' title='Live Demo'><SiLivewire /></a>
                         </div>
-                    </motion.article>
+                    </article>
                     )
                 })}
             </div>
