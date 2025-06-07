@@ -1,6 +1,6 @@
 import './home.css'
 import me from '../../assets/me-image.png'
-import cv from '../../assets/Cv-mahmoud.pdf'
+import cv from '../../assets/Mahmoud-Asharf-latest.pdf'
 import Links from "./Links";
 import { motion } from 'framer-motion';
 const Home = () => {

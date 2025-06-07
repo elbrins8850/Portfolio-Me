@@ -19,7 +19,7 @@ const data = [
     {
         id: 2,
         github: "https://github.com/elbrins8850/move",
-        live: "https://move-self.vercel.app/",
+        live: "https://elbrins8850.github.io/move/",
         image: movie,
     },
     {
